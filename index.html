@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f3ead3">
+<title>法律史与法律思想 · 系统自学</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- 顶部栏 -->
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录">
+    <span class="bars"><i></i><i></i><i></i></span>
+    <span class="icon-label">目录</span>
+  </button>
+  <a class="brand" href="#/">
+    <span class="brand-mark">⚖</span>
+    <span class="brand-text">法律史与法律思想</span>
+  </a>
+  <button class="icon-btn" id="searchBtn" aria-label="搜索">
+    <span class="search-glyph">⌕</span>
+    <span class="icon-label">搜索</span>
+  </button>
+</header>
+
+<!-- 目录抽屉 -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="课程目录">
+  <div class="drawer-head">
+    <div class="drawer-title">课程目录</div>
+    <button class="drawer-close" id="drawerClose" aria-label="关闭">×</button>
+  </div>
+  <div class="drawer-sub">六部分 · 十八模块 · 法学经典精读</div>
+  <nav id="drawerNav"></nav>
+  <div class="drawer-foot">
+    <a href="#/thinkers" class="drawer-link" data-close>思想家索引</a>
+    <a href="#/schools" class="drawer-link" data-close>法律学派索引</a>
+    <a href="#/concepts" class="drawer-link" data-close>关键概念索引</a>
+    <a href="#/timeline" class="drawer-link" data-close>历史时间线</a>
+    <a href="#/comparisons" class="drawer-link" data-close>理论比较表</a>
+  </div>
+</aside>
+
+<!-- 搜索面板 -->
+<div class="search-panel" id="searchPanel" aria-hidden="true">
+  <div class="search-box">
+    <span class="search-glyph">⌕</span>
+    <input type="search" id="searchInput" placeholder="搜索人物、概念、理论、案例…" autocomplete="off">
+    <button id="searchClose" aria-label="关闭搜索">×</button>
+  </div>
+  <div class="search-hint">试试：无知之幕 · 教皇革命 · 自然法 · 奥斯丁 · 罗尔斯</div>
+  <div class="search-results" id="searchResults"></div>
+</div>
+
+<!-- 主内容 -->
+<main id="app"></main>
+
+<footer class="site-foot">
+  <div class="foot-orn">✦ &nbsp; ⚖ &nbsp; ✦</div>
+  <p>法律史与法律思想 · 个人系统自学课程</p>
+  <p class="foot-small">以凯利《西方法律思想简史》、伯尔曼《法律与革命》、罗尔斯《正义论》为理论基础 · 内容为独立编写的学习讲义</p>
+</footer>
+
+<script src="js/data/catalog.js"></script>
+<script src="js/data/indices.js"></script>
+<script src="js/data/part1.js"></script>
+<script src="js/data/part2.js"></script>
+<script src="js/data/part3.js"></script>
+<script src="js/data/part4.js"></script>
+<script src="js/data/part5.js"></script>
+<script src="js/data/part6.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
